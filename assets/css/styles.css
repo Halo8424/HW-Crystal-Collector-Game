@@ -20,6 +20,13 @@ body {
   padding: 5px;
   margin: 10px;
 }
+.container{
+    margin-top: 20px;
+}
+.wins-losses-container{
+    display: flex;
+    justify-content: space-around;
+}
 
 .center {
   display: flex;
