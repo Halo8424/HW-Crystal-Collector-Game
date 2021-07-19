@@ -4,16 +4,38 @@ $(document).ready(function(){
         // console.log("clicked");
         $("#rules-area").toggle(3000);
     });
- // Generates the random "target number" we will try to reach.
-    const randomNum = randomNumGen();
 
- // Starting variables.
- let wins = 0;
- let losses = 0;
- let crystals;
+ // Crystal Variables
+var crystal = {
+    blue:
+    {
+      name: "Blue",
+      value: 0
+    },
+    green:
+    {
+      name: "Green",
+      value: 0
+    },
+    red:
+    {
+      name: "Red",
+      value: 0
+    },
+    yellow:
+    {
+      name: "Yellow",
+      value: 0
+    }
+  };
+  
+  // Scores (Current and Target)
+  var currentScore = 0;
+  var targetScore = 0;
+  
+  // Wins and Losses
+  var winCount = 0;
+  var lossCount = 0;
 
-
- function randomNumGen() {
-    return Math.floor(Math.random() * 102) + 19;
-  }
+  
 });
