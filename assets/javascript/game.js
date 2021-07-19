@@ -48,6 +48,11 @@ $(document).ready(function () {
     console.log(targetScore);
   };
 
+  // Set different values for each of the crystals (between 1 and 12)
+  crystal.blue.value = getRandom(1, 12);
+  crystal.red.value = getRandom(1, 12);
+  crystal.green.value = getRandom(1, 12);
+  crystal.yellow.value = getRandom(1, 12);
 
   startGame();
 });
