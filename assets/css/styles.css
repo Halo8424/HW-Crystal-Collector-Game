@@ -5,3 +5,9 @@ body{
     -o-background-size: cover;
     background-size: cover;   
 }
+
+#title{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 5px;
+}
