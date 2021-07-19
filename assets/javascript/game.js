@@ -2,6 +2,6 @@ $(document).ready(function(){
 // toggle hide and show for instructions btn
     $("#instructions").on("click",function(){
         // console.log("clicked");
-        $("#rules-area").toggle();
+        $("#rules-area").toggle(3000);
     });
 });
