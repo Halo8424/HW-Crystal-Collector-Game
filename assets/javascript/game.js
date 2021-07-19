@@ -5,6 +5,7 @@ $(document).ready(function () {
     $("#rules-area").toggle(3000);
   });
 
+
  
 
   // Scores (Current and Target)
@@ -21,6 +22,18 @@ $(document).ready(function () {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
+  let crystalsGenerateRandomNum = function(){
+      let blueNum = getRandom(1,12);
+      let greenNum = getRandom(1,12);
+      let yellowNum = getRandom(1,12);
+      let redNum = getRandom(1,12);
+
+      $("#blue").value(blueNum);
+      $("#green").value(greenNum);
+      $("#yellow").value(yellowNum);
+      $("#red").value(redNum);
+  };
+
   var startGame = function () {
     // Reset the Current Score
     currentScore = 0;
@@ -29,9 +42,17 @@ $(document).ready(function () {
     targetScore = getRandom(19, 120);
     console.log(targetScore);
     $("#targetScore").append(targetScore);
+
+  // Add Random Values to Crystals
+  crystalsGenerateRandomNum();  
+
+
   };
 
-  
+  // click event
+  $(".crystal").on("click", function(){
+      console.log("clicked");
+  });
 
   startGame();
 });
