@@ -5,25 +5,7 @@ $(document).ready(function () {
     $("#rules-area").toggle(3000);
   });
 
-  // Crystal Variables
-  var crystal = {
-    blue: {
-      name: "Blue",
-      value: 0,
-    },
-    green: {
-      name: "Green",
-      value: 0,
-    },
-    red: {
-      name: "Red",
-      value: 0,
-    },
-    yellow: {
-      name: "Yellow",
-      value: 0,
-    },
-  };
+ 
 
   // Scores (Current and Target)
   var currentScore = 0;
@@ -46,13 +28,10 @@ $(document).ready(function () {
     // Set a new Target Score (between 19 and 120)
     targetScore = getRandom(19, 120);
     console.log(targetScore);
+    $("#targetScore").append(targetScore);
   };
 
-  // Set different values for each of the crystals (between 1 and 12)
-  crystal.blue.value = getRandom(1, 12);
-  crystal.red.value = getRandom(1, 12);
-  crystal.green.value = getRandom(1, 12);
-  crystal.yellow.value = getRandom(1, 12);
+  
 
   startGame();
 });
