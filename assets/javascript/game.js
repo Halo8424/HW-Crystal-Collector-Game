@@ -13,5 +13,7 @@ $(document).ready(function(){
  let crystals;
 
 
- 
+ function randomNumGen() {
+    return Math.floor(Math.random() * 102) + 19;
+  }
 });
